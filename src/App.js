@@ -1,6 +1,4 @@
-import './css/style.css';
-
-import Main from './screen/main';
+import Home from './screen/Home';
 import Platform from './screen/platform'
 
 import Header from './components/common/Header.js'
@@ -15,7 +13,7 @@ function App() {
         <Header/>
         
         <Switch>
-            <Route path="/" exact component={Main}/>
+            <Route path="/" exact component={Home}/>
             <Route path="/platform" component={Platform}/>
         </Switch>
 

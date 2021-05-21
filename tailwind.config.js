@@ -32,11 +32,15 @@ module.exports = {
       'lt': '#F05A28',
       'cen': '#EC008C',
       'rt': '#F05A28',
+      'top': 'rgb(236, 0, 139)',
+      'bot': 'rgb(241, 90, 34)'
     }),
     extend: {
       backgroundImage: {
         'logo': "url('https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png')",
         'main-cover': "url('https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_copy_c_1058486430/image-res.img.e56494f1-7df7-4fca-81d1-8fc6c44a5e17.jpg')",
+        'win-cover': "url('https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/targeted_section/targeted-parsys-default/generic_block_143764/parsys/columns/column-parsys-1/generic_block/image-res.img.8db9b947-2e00-4e45-a130-2be8c168dd77.png')",
+        'growth-cover': "url('https://www.pluralsight.com/content/pluralsight/en/jcr:content/main/generic_block_1609496607/image-res.img.c281c966-a3d8-42b2-a905-715633f7b417.jpg')"
       },
     },
   },

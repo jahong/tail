@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "./css/style.css";
 
 :root {
     --color-wh: #ffffff;
@@ -45,16 +44,14 @@ body {
         font-semibold
 }
 
-
 /* btn */
-
 .btn {
     @apply 
         transition
         ease-in-out duration-700
         text-wh 
         justify-items-center
-        px-20 py-3
+        px-9 py-3
         font-bold
 }
 .btn-df {
@@ -91,6 +88,16 @@ body {
     @apply flex-none
 }
 
+/* bg */
+.bg-gd-r {
+    @apply 
+        bg-gradient-to-r from-lt via-cen to-rt 
+}
+
+.bg-gd-t {
+    @apply 
+        bg-gradient-to-r from-top to-bot 
+}
 
 /* section */
 .section-pad {
@@ -130,4 +137,14 @@ body {
 }
 .box-path {
     @apply py-7 px-8 bg-darkLt rounded-lg
+}
+
+/* winning */
+.winning-cover {
+    @apply bg-win-cover bg-contain bg-no-repeat
+}
+
+/* growth */
+.growth-cover {
+    @apply bg-growth-cover bg-cover bg-no-repeat
 }
