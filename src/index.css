@@ -1,13 +1,121 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./css/style.css";
+
+:root {
+    --color-wh: #ffffff;
+    --color-dark: #212121;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* common */
+body {
+    @apply bg-dark
+}
+.container-lg {
+    max-width: 1400px;
+    @apply m-auto
+}
+.container {
+    max-width: 1000px;
+    @apply m-auto
+}
+
+/* header */
+.header {
+    @apply bg-dark top-0 fixed w-full
+}
+.nav-logo {
+    width: 180px;
+    height: 40px;
+    @apply 
+        bg-logo bg-contain inline-block 
+        my-4
+}
+.nav-btn {
+    font-size: 15px;
+    height: 70px;
+    @apply 
+        bg-trans text-wh 
+        inline-block justify-center items-center 
+        py-6 px-10
+        font-semibold
+}
+
+
+/* btn */
+
+.btn {
+    @apply 
+        transition
+        ease-in-out duration-700
+        text-wh 
+        justify-center items-center 
+        px-20 py-3
+        font-bold
+}
+.btn-df {
+    @apply 
+        bg-gradient-to-r from-lt via-cen to-rt 
+}
+
+.btn-bk {
+    @apply 
+        bg-dark
+        hover:shadow-xl
+}
+
+.btn-line {
+    @apply 
+        bg-trans border-wh 
+        shadow border
+        hover:shadow-inner border-2
+}
+
+/* align */
+.center-ct {
+    @apply flex flex-col justify-center items-center;
+}
+.center-rt {
+    @apply flex flex-col justify-center items-end;
+}
+
+/* list */
+.ul-df {
+    @apply flex flex-row
+}
+.li-df {
+    @apply flex-none
+}
+
+
+
+
+/* main cover */
+.mainCover {
+    margin-top: 60px;
+    min-height: 512px;
+    @apply bg-prm flex bg-no-repeat bg-cover bg-center bg-main-cover
+}
+@media (max-width: 1024px) {
+    .mainCover {
+        min-height: 480px;
+    }   
+}
+.mainCoverTxtWrap {
+    @apply w-4/6 px-3
+}
+.mainTxt {
+    @apply text-wh
+}
+.mainTxtHeader {
+    @apply font-mono font-bold text-5xl
+}
+.mainTxtDesc {
+    @apply py-5 text-lg
+}
+
+/* main tranding */
+.box-path {
+    @apply p-20 border
 }
