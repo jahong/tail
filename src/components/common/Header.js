@@ -19,7 +19,7 @@ const Header = () => {
                         return (
                         <li className="li-df" key={i}>
                             {item.logo ? 
-                            <Link className="nav-logo"/>
+                            <Link className="nav-logo" to="/"/>
                             :
                             <Link className="nav-btn capitalize" to="/">{item.title}</Link>
                             }

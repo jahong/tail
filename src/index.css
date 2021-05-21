@@ -5,7 +5,10 @@
 
 :root {
     --color-wh: #ffffff;
+    --color-bl: #000000;
     --color-dark: #212121;
+    --color-darkLt: #222222;
+    --color-darkDp: #181818;
 }
 
 /* common */
@@ -23,7 +26,7 @@ body {
 
 /* header */
 .header {
-    @apply bg-dark top-0 fixed w-full
+    @apply z-50 shadow-lg bg-dark top-0 fixed w-full
 }
 .nav-logo {
     width: 180px;
@@ -50,7 +53,7 @@ body {
         transition
         ease-in-out duration-700
         text-wh 
-        justify-center items-center 
+        justify-items-center
         px-20 py-3
         font-bold
 }
@@ -89,7 +92,13 @@ body {
 }
 
 
-
+/* section */
+.section-pad {
+    @apply py-32
+}
+.setion-title {
+    @apply text-4xl font-bold
+}
 
 /* main cover */
 .mainCover {
@@ -116,6 +125,9 @@ body {
 }
 
 /* main tranding */
+.box-path-wrap {
+    @apply p-5 justify-items-center
+}
 .box-path {
-    @apply p-20 border
+    @apply py-7 px-8 bg-darkLt rounded-lg
 }

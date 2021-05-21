@@ -18,7 +18,11 @@ module.exports = {
         900: 'rgba(228,0,132.0.9)',
       },
       wh: 'var(--color-wh)',
+      bl: 'var(--color-bl)',
       dark: 'var(--color-dark)',
+      darkLt: 'var(--color-darkLt)',
+      darkDp: 'var(--color-darkDp)',
+      yellow: '#ffba0e',
       gray: {
         500: 'rgba(1,1,1,0.5)'
       },
