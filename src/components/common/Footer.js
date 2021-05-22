@@ -57,6 +57,8 @@ const footerSocialList = [
 
 const Footer = () => {
 
+  const copyImg = 'https://www.pluralsight.com/content/dam/pluralsight2/general/icons/light/ps-icon.png'
+
   return (
     <div className="bg-darkLt">
         <div className="py-20 container-lg px-10">
@@ -86,11 +88,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-around px-10 py-10 border-t border-dkGray">
-            <div className="text-aGray text-sm">
-            Copyright © 2004 - 2021 Pluralsight LLC. All rights reserved
+        <div className="flex flex-wrap justify-around px-10 py-16 border-t border-dkGray">
+            <div className="flex flex-row justify-items-center relative text-aGray text-sm">
+              <img className="h-10 mr-4 absolute" style={{top: '-10px'}} src={copyImg}/>
+              <div className="pl-14">
+              Copyright © 2004 - 2021 Pluralsight LLC. All rights reserved
+              </div>
             </div>
-            <div className="text-wh flex flex-row">
+            <div className="flex flex-row text-wh">
                 {footerSocialList.map( (item,i) => {
                   return (
                     <Link to="/" key={i} className="justify-items-center">
