@@ -1,5 +1,5 @@
 import Home from './screen/Home';
-import Platform from './screen/platform'
+import Subpage from './screen/Subpage'
 
 import Header from './components/common/Header.js'
 import Footer from './components/common/Footer.js'
@@ -14,7 +14,7 @@ function App() {
         
         <Switch>
             <Route path="/" exact component={Home}/>
-            <Route path="/platform" component={Platform}/>
+            <Route path="/Subpage" component={Subpage}/>
         </Switch>
 
         {/* footer */}

@@ -1,15 +1,15 @@
 //import MainCover from '../components/MainCover.js'
 
-function platform() {
+function Subpage() {
   return (
     <>
       
       <div className="container m-auto">
-        test
+        Subpage
       </div>
 
     </>
   );
 }
 
-export default platform;
+export default Subpage;

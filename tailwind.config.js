@@ -23,8 +23,13 @@ module.exports = {
       darkLt: 'var(--color-darkLt)',
       darkDp: 'var(--color-darkDp)',
       yellow: '#ffba0e',
+      aGray: '#aaa',
+      ltGray: '#7c7c7d',
+      dkGray: '#363636',
       gray: {
-        500: 'rgba(1,1,1,0.5)'
+        100: 'rgba(1,1,1,0.1)',
+        500: 'rgba(1,1,1,0.5)',
+        900: 'rgba(1,1,1,0.9)',
       },
     },
     gradientColorStops: theme => ({

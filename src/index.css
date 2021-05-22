@@ -148,3 +148,8 @@ body {
 .growth-cover {
     @apply bg-growth-cover bg-cover bg-no-repeat
 }
+
+/* footer */
+.footer-link {
+    @apply transition duration-300 text-ltGray hover:text-wh
+}
