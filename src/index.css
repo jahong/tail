@@ -149,6 +149,15 @@ body {
     @apply bg-growth-cover bg-cover bg-no-repeat
 }
 
+/* twitter */
+.slide-box {
+    min-height: 350px;
+    @apply bg-wh h-full inline-block text-bl p-5 rounded-md
+}
+.slide-btn {
+    @apply inline-block bg-contain bg-no-repeat bg-center w-4 h-5
+}
+
 /* footer */
 .footer-link {
     @apply transition duration-300 text-ltGray hover:text-wh
