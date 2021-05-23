@@ -22,7 +22,7 @@ const Tranding = () => {
                               <Link to="/">
                                 <div className="box-path-wrap text-wh">
                                   <div className="box-path relative">
-                                    <img className="absolute w-24 right-0 top-0" src={item.uri}/>
+                                    <img className="absolute w-24 right-0 top-0" src={item.uri} alt="img"/>
                                     <div className="text-prm uppercase">path</div>
                                     <div className="pt-4 text-2xl">
                                         {item.title}

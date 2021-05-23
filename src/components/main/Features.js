@@ -8,7 +8,7 @@ const pathList = [
     title: 'Create better cloud outcomes with hands-on experience', 
     desc: 'Your teams need the right skills and a place to practice to ensure they’re ready to deliver on your cloud objectives. Labs enable learners to get hands-on practice in a provisioned cloud environment in AWS, Azure and Google Cloud (Google Cloud powered by Quiklabs).',
     titleUri: 'https://www.pluralsight.com/content/dam/pluralsight2/product/v2/logos/logo-skills.png',
-    imgUri: '/content/dam/pluralsight2/homepage/Cloud-labs-image2x.png'
+    imgUri: 'https://www.pluralsight.com/content/dam/pluralsight2/homepage/Cloud-labs-image2x.png'
   },
   {
     titleUri: 'https://www.pluralsight.com/content/dam/pluralsight2/homepage/certification-prep.png',
@@ -46,12 +46,12 @@ const Features = () => {
                 <ul className="flex flex-wrap flex-row">
                   {pathList.map( (item,i)=> {
                       return (
-                          <li className={(item.width == 'full' ? 'flex-none w-full' : 'flex-none w-1/3')} key={i}>
+                          <li className={(item.width === 'full' ? 'flex-none w-full' : 'flex-none w-1/3')} key={i}>
                             <div className="box-path-wrap text-wh h-full">
                               <Link to="/" className="box-path inline-block h-full bg-darkLt relative">
                                 <div className="">
                                   <div className="text-lg text-wh">
-                                      <img className="absolute left-0 top-0" src={item.titleUri}/>
+                                      <img className="absolute left-0 top-0" src={item.titleUri} alt="img"/>
                                       {item.sub}
                                   </div>
                                   <div className="pt-4 text-3xl font-bold">
@@ -63,7 +63,9 @@ const Features = () => {
                                   <div className="font-bold">
                                       Learn more
                                   </div>
-                                  <img className="absolute w-24 right-0 top-0" src={item.bgUri}/>
+                                  {item.imgUri ? 
+                                    <img className="absolute w-24 right-0 top-0" src={item.imgUri} alt="img"/>
+                                  :null}
                                 </div>  
                               </Link>
                             </div>

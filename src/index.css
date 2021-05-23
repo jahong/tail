@@ -150,12 +150,25 @@ body {
 }
 
 /* twitter */
+.slick-track {
+    display: flex !important;
+}
+.slick-track>.slick-slide {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    height: inherit;
+}
+.slick-track>.slick-slide>div {
+    display: inline-block;
+    height: 100%;
+}
+
 .slide-box {
-    min-height: 350px;
-    @apply bg-wh h-full inline-block text-bl p-5 rounded-md
+    @apply bg-wh h-full text-bl p-5 rounded-md
 }
 .slide-btn {
-    @apply inline-block bg-contain bg-no-repeat bg-center w-4 h-5
+    @apply mr-3 inline-block bg-contain bg-no-repeat bg-center w-4 h-5
 }
 
 /* footer */

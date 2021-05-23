@@ -45,7 +45,7 @@ const Discover = () => {
                               <Link to="/" className="inline-block relative">
                                 <div className="">
                                   <div className="rounded-2xl overflow-hidden">
-                                      <img className="" src={item.titleUri}/>
+                                      <img className="" src={item.titleUri} alt="img"/>
                                   </div>
                                   <div className="pt-4 text-yellow text-md font-bold">
                                       {item.title}

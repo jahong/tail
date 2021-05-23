@@ -58,10 +58,10 @@ const Twitter = () => {
             <Slider {...settings}>
               {TwitterList.map( (item,i) =>{
                 return (
-                  <div key={i} className="">
-                      <div className="slide-box mx-2">
+                  <div key={i} className="box-path-wrap h-full">
+                      <div className="box-path inline-block h-full relative slide-box">
                         <div>
-                            <Link>
+                            <Link to="/">
                                 <div>{item.name}</div>
                             </Link>
                             <div>{item.link}</div>

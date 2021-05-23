@@ -13,7 +13,7 @@ const Growth = () => {
                   <div className="inline-block relative">
                     <div className="py-10">
                       <div className="">
-                          <img className="h-32" src={imgLink}/>
+                          <img className="h-32" src={imgLink} alt="img"/>
                       </div>
                       <div className="px-10">
                         <div className="text-wh text-5xl font-bold">

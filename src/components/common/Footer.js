@@ -90,7 +90,7 @@ const Footer = () => {
 
         <div className="flex flex-wrap justify-around px-10 py-16 border-t border-dkGray">
             <div className="flex flex-row justify-items-center relative text-aGray text-sm">
-              <img className="h-10 mr-4 absolute" style={{top: '-10px'}} src={copyImg}/>
+              <img className="h-10 mr-4 absolute" style={{top: '-10px'}} src={copyImg} alt="img"/>
               <div className="pl-14">
               Copyright © 2004 - 2021 Pluralsight LLC. All rights reserved
               </div>
@@ -101,7 +101,7 @@ const Footer = () => {
                     <Link to="/" key={i} className="justify-items-center">
                         {item.con ? 
                         <div className="px-4">
-                          <img className="w-4 inline-block" src={item.conUrl}/>
+                          <img className="w-4 inline-block" src={item.conUrl} alt="img"/>
                         </div>
                         :
                         <div className="text-sm text-aGray px-5">

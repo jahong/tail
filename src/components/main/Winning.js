@@ -13,7 +13,7 @@ const Winning = () => {
                   <div className="inline-block relative">
                     <div className="px-16 py-10">
                       <div className="overflow-hidden">
-                          <img className="h-4" src={imgLink}/>
+                          <img className="h-4" src={imgLink} alt="img"/>
                       </div>
                       <div className="pt-6 text-wh text-2xl font-bold">
                       Winning the talent war with a scalable tech skills platform
