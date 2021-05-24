@@ -23,34 +23,15 @@ body {
     @apply m-auto
 }
 
-/* header */
-.header {
-    @apply z-50 shadow-lg bg-dark top-0 fixed w-full
-}
-.nav-logo {
-    width: 180px;
-    height: 40px;
-    @apply 
-        bg-logo bg-contain inline-block 
-        my-4
-}
-.nav-btn {
-    font-size: 15px;
-    height: 70px;
-    @apply 
-        bg-trans text-wh 
-        inline-block justify-center items-center 
-        py-6 px-10
-        font-semibold
-}
-
 /* btn */
 .btn {
     @apply 
         transition
         ease-in-out duration-700
         text-wh 
-        justify-items-center
+        justify-center
+        content-center
+        items-center
         px-9 py-3
         font-bold
 }
@@ -79,6 +60,9 @@ body {
 .center-rt {
     @apply flex flex-col justify-center items-end;
 }
+.center {
+    @apply justify-center content-center items-center
+}
 
 /* list */
 .ul-df {
@@ -97,6 +81,26 @@ body {
 .bg-gd-t {
     @apply 
         bg-gradient-to-r from-top to-bot 
+}
+
+/* header */
+.header {
+    @apply z-50 shadow-lg bg-dark top-0 fixed w-full
+}
+.nav-logo {
+    width: 180px;
+    height: 46px;
+    @apply 
+        bg-logo bg-contain bg-no-repeat inline-block 
+        my-5
+}
+.nav-btn {
+    font-size: 15px;
+    @apply 
+        bg-trans text-wh 
+        inline-block justify-center items-center 
+        py-7 px-10
+        font-semibold
 }
 
 /* section */
