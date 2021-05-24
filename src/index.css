@@ -136,12 +136,13 @@ body {
     @apply p-5 justify-items-center
 }
 .box-path {
-    @apply py-7 px-8 bg-darkLt rounded-lg
+    @apply bg-darkLt
 }
 
 /* winning */
 .winning-cover {
-    @apply bg-win-cover bg-contain bg-no-repeat
+    background-size: 60%;
+    @apply bg-win-cover bg-no-repeat bg-left
 }
 
 /* growth */
@@ -165,7 +166,7 @@ body {
 }
 
 .slide-box {
-    @apply bg-wh h-full text-bl p-5 rounded-md
+    @apply bg-wh pb-10 h-full text-bl p-5 rounded-md
 }
 .slide-btn {
     @apply mr-3 inline-block bg-contain bg-no-repeat bg-center w-4 h-5

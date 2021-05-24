@@ -8,7 +8,7 @@ const Winning = () => {
   return (
     <div className="bg-bl">
         <div className="winning-cover">
-            <div className="flex flex-row center-rt ">
+            <div className="flex flex-row center-rt">
                 <div className="flex-none w-2/5 text-wh h-full bg-gd-t">
                   <div className="inline-block relative">
                     <div className="px-16 py-10">

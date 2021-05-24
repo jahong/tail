@@ -48,10 +48,38 @@ const Features = () => {
                       return (
                           <li className={(item.width === 'full' ? 'flex-none w-full' : 'flex-none w-1/3')} key={i}>
                             <div className="box-path-wrap text-wh h-full">
-                              <Link to="/" className="box-path inline-block h-full bg-darkLt relative">
-                                <div className="">
-                                  <div className="text-lg text-wh">
-                                      <img className="absolute left-0 top-0" src={item.titleUri} alt="img"/>
+                              <Link to="/" className="box-path rounded-3xl m-0 inline-block h-full bg-darkLt relative">
+                                {item.imgUri ? 
+                                  <div className="flex flex-row relative">
+                                    <div className="flex-1">
+                                      <div className="m-10 relative">
+                                          <div className="text-lg text-wh inline-block">
+                                              <div className="flex flex-row">
+                                                <img className="h-5" src={item.titleUri} alt="img"/>
+                                                <div className="ml-5">
+                                                {item.sub}
+                                                </div>
+                                              </div>
+                                          </div>
+                                          <div className="pt-4 text-3xl font-bold">
+                                              {item.title}
+                                          </div>
+                                          <div className="py-4 text-wh">
+                                              {item.desc}
+                                          </div>
+                                          <div className="font-bold">
+                                              Learn more
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <div className="flex-1">
+                                        <img className="w-full right-0 top-0" src={item.imgUri} alt="img"/>
+                                    </div>
+                                  </div>  
+                                :
+                                <div className="m-10 relative ">
+                                  <div className="text-lg text-wh inline-block">
+                                      <img className="h-5" src={item.titleUri} alt="img"/>
                                       {item.sub}
                                   </div>
                                   <div className="pt-4 text-3xl font-bold">
@@ -63,10 +91,8 @@ const Features = () => {
                                   <div className="font-bold">
                                       Learn more
                                   </div>
-                                  {item.imgUri ? 
-                                    <img className="absolute w-24 right-0 top-0" src={item.imgUri} alt="img"/>
-                                  :null}
-                                </div>  
+                                </div> 
+                                }
                               </Link>
                             </div>
                           </li>
