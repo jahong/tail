@@ -28,7 +28,7 @@ body {
     @apply 
         transition
         ease-in-out duration-700
-        text-wh 
+        text-wh inline-block
         justify-center
         content-center
         items-center
